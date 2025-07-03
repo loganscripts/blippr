@@ -1,0 +1,51 @@
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
+}
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --accent: #0066ff;
+}
+body.dark {
+  --bg: #0a0a0a;
+  --text: #eaeaea;
+  --accent: #bb00ff;
+}
+header, footer {
+  background: var(--accent);
+  padding: 1rem;
+  text-align: center;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: var(--text);
+}
+.articles article {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+}
+.ad-space {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+.newsletter {
+  text-align: center;
+  padding: 1rem;
+}
+button {
+  padding: 0.5rem 1rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
